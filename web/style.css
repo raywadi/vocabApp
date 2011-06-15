@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: georgia, times, "times new roman", serif;
+    background-color: #022330;
+}
+
+#wrap {
+    height: 100%;
+    overflow: scroll;
+    background-color: #f0f0f0
+}
+
+#top {
+    height: 110px;
+    font-size: 18px;
+    padding:5px;
+}
+
+#left {
+    width: 12%;
+    float: left;
+    font-size: 20px;
+}
+
+#right {
+    width: 12%;
+    height: 100%;
+    float: right;
+    font-size: 20px;
+}
+
+#content {
+    width: 76%;
+    height: auto;
+    float: right;
+    background-color: #ffffff;
+    border: 2px solid #666699;
+    font-size: 16px;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 1%;
+    font-size: 2.2em;
+    font-weight: 200;
+}
+
+#main h1 {
+    text-align: left;
+    margin-left: 160px;
+}
+
+#top ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 90px;
+    padding-left: 12%;
+}
+
+#top li {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    float: none;
+}
+
+#top a:link {
+    text-decoration: none;
+    color: #666699;
+}
+
+#top a:visited {
+    text-decoration: none;
+    color: #666699;
+}
+
+#top a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+.meaning {
+    width: 60%;
+    padding-left: 20%;
+}
+
+#wordList {
+    width: 12%;
+    float: left;
+}
+
+#meaningWithList {
+    position:inherit;
+    width: 68%;
+    float: right;
+    padding-right: 14%;
+    bottom: 50px;
+}
+
+.word {
+    height: 40px;
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 35%;
+
+}
+
+.word:active {
+    background-color: #666699;
+    color:white;
+}
+
+.vr{
+    width:1px;
+    height:80%;
+    background-color:#000;
+}
+
+#successMessage {
+    height:15px;
+    background-color:#aaeeaa;
+    visibility:hidden;
+
+}
