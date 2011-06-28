@@ -4,29 +4,35 @@
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/add.js"></script>
     <script type="text/javascript">
-        function sleep(time) {
-            var startTime = new Date();
-            while (new Date().getTime() < startTime + time);
-                    }
+        function hide() {
+            document.getElementById("successMessage").style.visibility = "hidden";
+        }
         function api_call() {
             var words = $("textarea").val().split("\n");
             for (var i = 0; i < words.length; i++) {
-                add(words[i]);
+                var currentWord = words[i].split(":");
+                var word = currentWord[0];
+                var shortHand = '';
+                if(currentWord.length==2){
+                    shortHand = currentWord[1];
+                }
+                add(word,shortHand);
             }
-            document.getElementById("searchWord").value='';
-            document.getElementById("successMessage").style.visibility="visible";
-            sleep(5000000000);
-            document.getElementById("successMessage").style.visibility="hidden";
+            document.getElementById("searchWord").value = '';
+            document.getElementById("successMessage").style.visibility = "visible";
+//            sleep(5000);
+//            document.getElementById("successMessage").style.visibility = "hidden";
         }
     </script>
 </head>
 <jsp:include page="template.jsp"></jsp:include>
 <body onload="">
-<div id="content" align="center" >
+<div id="content" align="center" style="padding-bottom:5px">
     <div style="padding:25px">
-        <textarea style="border-color:#666699; outline-color:#666699; font:18px" name="searchWord" id="searchWord" cols="50" rows="10"></textarea>
+        <textarea onclick="hide();" style="border-color:#666699; outline-color:#666699; font:18px" name="searchWord" id="searchWord"
+                  cols="50" rows="10"></textarea>
         <br>
-        <button id="go" style="background-color:#666699; color:white;" name="go" onclick="api_call()">Add</button>
+        <button id="go" class="submit" name="go" onclick="api_call()">Add</button>
 
     </div>
     <div id="successMessage" align="center">Added to the wordlist successfully</div>

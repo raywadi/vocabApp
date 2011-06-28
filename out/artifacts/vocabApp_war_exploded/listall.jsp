@@ -44,42 +44,48 @@
 <body>
 <div id="content">
     <br>
-        <%
+    <%
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
 
         PersistenceManager pm = PMF.get().getPersistenceManager();
         String queryString = "select from " + Words.class.getName() + " where email == '"
-                            + user.getEmail()+ "' order by date desc";
+                + user.getEmail() + "' order by date desc";
         Query query = pm.newQuery(queryString);
-        query.setRange(0,10);
-        List<Words> greetings = (List<Words>) query.execute();
+        query.setRange(0, 10);
+        List<Words> wordsList = (List<Words>) query.execute();
+        String shortHand="";
     %>
-    <%--<div onclick="delete_all()">DELETE</div>--%>
-    <div id="wordList" onmouseout="hide()" onmouseover="show()">
+    <div class="wordList"
+         id="wordList">
         <%
-            if (greetings.isEmpty()) {
+            if (wordsList.size() == 0) {
         %>
-        <p>The notebook has no words.</p>
+        There are no words in your word list yet.
         <%
-        } else {
-            for (Words word : greetings) {
-        %>
-        <div class="word" onclick="api_call('<%= word.getWord() %>');"><%= word.getWord()%>
-        </div>
-        <%
-                }
             }
-            pm.close();
+            for (Words word : wordsList) {
+                if("".equals(word.getShortHand())){
+                    shortHand = "No shortHand given";
+                } else {
+                    shortHand=word.getShortHand();
+                }
+            %>
+            <div class="word" title="<%=shortHand%>" align="center" onclick="api_call('<%= word.getWord() %>');">
+                <%= word.getWord()%>
+            </div>
+        <%
+            }
         %>
-        <%--<div class="vr"></div>--%>
     </div>
-    <div id="meaningWithList">
-        <div id="hindimeaning" align="center"></div>
-        <br>
 
-        <div id="meaning" align="left">
-        </div>
+<%--<div onclick="delete_all()">DELETE</div>--%>
+<div id="meaningWithList">
+    <div id="hindimeaning" align="center"></div>
+    <br>
+
+    <div id="meaning" align="left">
     </div>
+</div>
 </body>
 </html>

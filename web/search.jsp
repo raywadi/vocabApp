@@ -8,16 +8,42 @@
         document.getElementById("searchWord").focus();
         function api_call() {
             $("#meaning").html("loading...");
-            var word = $("textarea").val();
-//            hindi(word);
+            var word = $("#searchWord").val();
+            //            hindi(word);
             meaning(word);
-            add(word);
+            add(word,'');
+            var content = "<br><input class=\"input\" type=\"text\" id=\"shorthand\" size=\"30\"/>";
+            $("#shand").html(content);
+            document.getElementById("go").value='Add Shorthand';
+            document.getElementById("go").onclick=function(){add_shorthand()};
+        }
+
+        function add_shorthand() {
+            var shorthand = $("#shorthand").val();
+            var word = $("#searchWord").val();
+            add(word,shorthand);
+            $("#shand").html("");
+            $("#searchWord").val("");
+            $("#meaning").html("");
+            document.getElementById("go").value='Go';
+            document.getElementById("go").onclick="api_call()";
 
         }
+
+        function validate() {
+            var word = $("textarea").val();
+            var len = word.length;
+            if (len > 1) {
+                var lastChar = word[len - 1];
+                if (lastchar === ' ') {
+                    alert("should only enter alphabet");
+                }
+            }
+        }
     </script>
-            <%--//http://translate.google.com/translate_a/t?client=t&text=text&sl=en&tl=hi--%>
-            <%--//https://ajax.googleapis.com/ajax/services/language/translate?q=word&v=1.0&langpair=en|hi--%>
-            <%--//http://www.google.com/dictionary/json?callback=dict_api.callbacks.id&q=test&sl=en&tl=en--%>
+    <%--//http://translate.google.com/translate_a/t?client=t&text=text&sl=en&tl=hi--%>
+    <%--//https://ajax.googleapis.com/ajax/services/language/translate?q=word&v=1.0&langpair=en|hi--%>
+    <%--//http://www.google.com/dictionary/json?callback=dict_api.callbacks.id&q=test&sl=en&tl=en--%>
     <title>Simple jsp page</title>
 </head>
 <jsp:include page="template.jsp"></jsp:include>
@@ -26,13 +52,17 @@
     <br><br><br>
 
     <div id="searchBox" align="center">
-        <label>
-            <textarea style="border-color:#666699; outline-color:#666699; font:18px " name="searchWord" id="searchWord" cols="30" rows="1"></textarea>
-        </label>
-        <br><br>
-        <button style="background-color:#666699; color:white;" id="go" name="go" onclick="api_call()">Search</button>
+        <form>
+            <input class="input" type="text" id="searchWord" size="30"/>
+
+            <div id="shand">
+            </div>
+            <br/>
+            <input class="submit" type="submit" id="go" value="Go" onclick="api_call();return false;"/>
+        </form>
     </div>
     <br>
+
     <div id="hindimeaning" align="center"></div>
     <br>
 

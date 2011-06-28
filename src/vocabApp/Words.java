@@ -11,14 +11,16 @@ public class Words {
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
     private String word;
     private String email;
+    private String shortHand;
 
     @Persistent
     private Long date;
 
-    public Words(String word, long date, String email) {
+    public Words(String word, long date, String email, String shortHand) {
         this.word = word;
         this.date = date;
         this.email = email;
+        this.shortHand = shortHand;
     }
 
 
@@ -44,5 +46,13 @@ public class Words {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getShortHand() {
+        return shortHand;
+    }
+
+    public void setShortHand(String shortHand) {
+        this.shortHand = shortHand;
     }
 }

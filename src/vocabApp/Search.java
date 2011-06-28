@@ -5,6 +5,7 @@ import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 
 import javax.jdo.PersistenceManager;
+import javax.jdo.Query;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -33,15 +34,21 @@ public class Search extends HttpServlet {
             throws IOException {
         resp.setContentType("text/plain");
         String word = req.getParameter("word");
+        String shortHand = req.getParameter("shorthand");
+        String from = req.getParameter("from");
         long date = System.currentTimeMillis();
 
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
-
-        Words wordObject = new Words(word, date, user.getEmail());
-        System.out.println(date);
-
         PersistenceManager pm = PMF.get().getPersistenceManager();
+
+//        if ("shand".equals(from)) {
+//            Query query = pm.newQuery("delete from "+Words.class.getName() + " where word == '"+word+"'");
+//            query.execute();
+//        }
+
+        Words wordObject = new Words(word, date, user.getEmail(), shortHand);
+        System.out.println(date);
 
         try {
             pm.makePersistent(wordObject);

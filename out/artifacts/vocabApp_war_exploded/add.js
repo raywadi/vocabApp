@@ -1,11 +1,10 @@
-function add(word){
+function add(word,shorthand){
     $.ajax({
                 url: '/search',
                 dataType:"text",
                 type:'POST',
-                data:{word:word},
+                data:{word:word,shorthand:shorthand},
                 success:function(resp) {
-                    //                    alert("done");
                 }
             });
 }

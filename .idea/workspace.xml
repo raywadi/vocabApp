@@ -53,8 +53,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="40c0230c-164b-444e-a6f8-4beec6b22f5b" name="Default" comment="" />
-    <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
+    <ignored path="$USER_HOME_GRIFFON$/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,32 +71,6 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/vocabApp/Search.java" line="20" class="vocabApp.Search" package="vocabApp">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/vocabApp/Search.java" line="19" class="vocabApp.Search" package="vocabApp">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/vocabApp/Mailer.java" line="33" class="vocabApp.Mailer" package="vocabApp">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -165,28 +139,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cron.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/cron.xml">
+      <file leaf-file-name="listall.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/listall.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="61" selection-start="226" selection-end="226" vertical-scroll-proportion="-3.2608695">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mailer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vocabApp/Mailer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="30" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0">
+            <state line="83" column="0" selection-start="2810" selection-end="2810" vertical-scroll-proportion="0.45378152">
               <folding />
             </state>
           </provider>
@@ -195,43 +151,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="39" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Search.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vocabApp/Search.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/search.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="21" selection-start="1268" selection-end="1272" vertical-scroll-proportion="-15.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="21" selection-start="797" selection-end="797" vertical-scroll-proportion="0.40789473">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listall.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/listall.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="41" selection-start="1226" selection-end="1310" vertical-scroll-proportion="-16.652174">
+            <state line="104" column="9" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-7.88">
               <folding />
             </state>
           </provider>
@@ -251,22 +171,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/add.js" />
-        <option value="$PROJECT_DIR$/src/vocabApp/Word.java" />
         <option value="$PROJECT_DIR$/src/vocabApp/DeleteAll.java" />
-        <option value="$PROJECT_DIR$/src/vocabApp/Words.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/vocabApp/Search.java" />
         <option value="$PROJECT_DIR$/src/vocabApp/Add.java" />
         <option value="$PROJECT_DIR$/web/template.jsp" />
-        <option value="$PROJECT_DIR$/web/js/meaning.js" />
-        <option value="$PROJECT_DIR$/web/listall.jsp" />
         <option value="$PROJECT_DIR$/src/vocabApp/Mailer.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/cron.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/vocabApp/Words.java" />
+        <option value="$PROJECT_DIR$/src/vocabApp/Search.java" />
+        <option value="$PROJECT_DIR$/web/add.jsp" />
+        <option value="$PROJECT_DIR$/web/add.js" />
+        <option value="$PROJECT_DIR$/web/js/temp.js" />
+        <option value="$PROJECT_DIR$/web/js/meaning.js" />
         <option value="$PROJECT_DIR$/web/search.jsp" />
         <option value="$PROJECT_DIR$/web/style.css" />
-        <option value="$PROJECT_DIR$/web/add.jsp" />
+        <option value="$PROJECT_DIR$/web/listall.jsp" />
       </list>
     </option>
   </component>
@@ -320,9 +240,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -365,24 +284,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vocabApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vocabApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -407,6 +308,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -723,26 +625,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-400" y="-1050" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65954196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6763359" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23200859" sideWeight="0.75460124" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23053434" sideWeight="0.75460124" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16257669" sideWeight="0.70784104" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18780488" sideWeight="0.64580154" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28464016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34351146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -785,107 +687,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/vocabApp/DeleteAll.java">
+    <entry file="jar://$PROJECT_DIR$/../appengine-java-sdk-1.4.3/src/orm/datanucleus-core-1.1.5-src.zip!/datanucleus-core-1.1.5/src/java/org/datanucleus/ObjectManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="39" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vocabApp/Words.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../appengine-java-sdk-1.4.3/lib/user/appengine-api-1.0-sdk-1.4.3.jar!/com/google/appengine/repackaged/com/google/common/collect/Maps.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/meaning.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="511" selection-end="535" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="645" selection-end="645" vertical-scroll-proportion="0.037128713" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vocabApp/Add.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="709" selection-end="709" vertical-scroll-proportion="0.55445546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="27" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.6475196" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="59" selection-start="804" selection-end="804" vertical-scroll-proportion="0.33070865" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/cron.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="226" selection-end="226" vertical-scroll-proportion="-3.2608695">
-          <folding />
-        </state>
+        <state line="1174" column="0" selection-start="39413" selection-end="39413" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vocabApp/Mailer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="30" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0">
+        <state line="76" column="30" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.035799522" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="61" selection-start="226" selection-end="226" vertical-scroll-proportion="0.18939394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/cron.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="19" selection-start="191" selection-end="191" vertical-scroll-proportion="0.24193548" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vocabApp/DeleteAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.13824885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vocabApp/Add.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.12244898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vocabApp/Words.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="234" selection-end="234" vertical-scroll-proportion="0.2747253" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="60" selection-start="954" selection-end="954" vertical-scroll-proportion="0.67741936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="37" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.4117647" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="267" selection-end="267" vertical-scroll-proportion="0.34177214" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/temp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4448" selection-start="529" selection-end="529" vertical-scroll-proportion="0.35526314" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/meaning.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="64" selection-start="623" selection-end="623" vertical-scroll-proportion="0.6075949" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vocabApp/ListAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.15189873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vocabApp/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.46835443" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="9" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-7.88">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/listall.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="41" selection-start="1226" selection-end="1310" vertical-scroll-proportion="-16.652174">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vocabApp/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="39" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="21" selection-start="1268" selection-end="1272" vertical-scroll-proportion="-15.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="797" selection-end="797" vertical-scroll-proportion="0.40789473">
+        <state line="83" column="0" selection-start="2810" selection-end="2810" vertical-scroll-proportion="0.45378152">
           <folding />
         </state>
       </provider>

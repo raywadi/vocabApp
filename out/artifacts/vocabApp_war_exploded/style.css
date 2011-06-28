@@ -88,9 +88,9 @@ body {
     padding-left: 20%;
 }
 
-#wordList {
-    width: 12%;
-    float: left;
+.wordList {
+    width: 10%;
+    float:left;
 }
 
 #meaningWithList {
@@ -102,11 +102,9 @@ body {
 }
 
 .word {
-    height: 40px;
+    height: 30px;
     width: 100%;
-    padding-top: 10%;
-    padding-left: 35%;
-
+    float:left;
 }
 
 .word:active {
@@ -121,8 +119,26 @@ body {
 }
 
 #successMessage {
-    height:15px;
-    background-color:#aaeeaa;
+    height:20px;
+    width:300px;
+    background-color:#666699;
+    color:white;
     visibility:hidden;
+    border-radius:5px
 
+}
+
+.shorthand{
+    font-size:10px;
+}
+
+.input {
+    border-color:#666699;
+    outline-color:#666699;
+    font:18px;
+}
+
+.submit{
+    background-color:#666699;
+    color:white;
 }
