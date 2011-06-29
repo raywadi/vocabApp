@@ -26,10 +26,27 @@
             });
         }
 
-        function api_call(word) {
+        function api_call(word,domObject) {
             $("#meaning").html("loading...")
             //            hindi(word);
             meaning(word);
+            $(".word").removeClass("wordHighlight");
+            $(domObject).addClass("wordHighlight");
+        }
+
+        function archive_word(){
+            var word = $(".wordHighlight").html();
+            alert(word);
+            $.ajax({
+                url: '/archive',
+                dataType:"text",
+                type:'POST',
+                data:{word:word},
+                success:function(resp) {
+                    alert("done");
+                }
+            });
+
         }
 
         function hide() {
@@ -42,7 +59,7 @@
 </head>
 <jsp:include page="template.jsp"></jsp:include>
 <body>
-<div id="content">
+<div id="content" onmouseover="show()" onmouseout="hide()">
     <br>
     <%
         UserService userService = UserServiceFactory.getUserService();
@@ -52,12 +69,12 @@
         String queryString = "select from " + Words.class.getName() + " where email == '"
                 + user.getEmail() + "' order by date desc";
         Query query = pm.newQuery(queryString);
-        query.setRange(0, 10);
+        query.setRange(0, 20);
         List<Words> wordsList = (List<Words>) query.execute();
         String shortHand="";
     %>
-    <div class="wordList"
-         id="wordList">
+    
+    <div class="wordList" id="wordList">
         <%
             if (wordsList.size() == 0) {
         %>
@@ -71,7 +88,7 @@
                     shortHand=word.getShortHand();
                 }
             %>
-            <div class="word" title="<%=shortHand%>" align="center" onclick="api_call('<%= word.getWord() %>');">
+            <div class="word" title="<%=shortHand%>" align="center" onclick="api_call('<%= word.getWord() %>',this);">
                 <%= word.getWord()%>
             </div>
         <%

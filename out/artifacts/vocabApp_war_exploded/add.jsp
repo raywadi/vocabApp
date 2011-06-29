@@ -29,7 +29,7 @@
 <body onload="">
 <div id="content" align="center" style="padding-bottom:5px">
     <div style="padding:25px">
-        <textarea onclick="hide();" style="border-color:#666699; outline-color:#666699; font:18px" name="searchWord" id="searchWord"
+        <textarea onclick="hide();" class="input" name="searchWord" id="searchWord"
                   cols="50" rows="10"></textarea>
         <br>
         <button id="go" class="submit" name="go" onclick="api_call()">Add</button>

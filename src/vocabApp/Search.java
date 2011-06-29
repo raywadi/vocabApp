@@ -35,17 +35,11 @@ public class Search extends HttpServlet {
         resp.setContentType("text/plain");
         String word = req.getParameter("word");
         String shortHand = req.getParameter("shorthand");
-        String from = req.getParameter("from");
         long date = System.currentTimeMillis();
 
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
         PersistenceManager pm = PMF.get().getPersistenceManager();
-
-//        if ("shand".equals(from)) {
-//            Query query = pm.newQuery("delete from "+Words.class.getName() + " where word == '"+word+"'");
-//            query.execute();
-//        }
 
         Words wordObject = new Words(word, date, user.getEmail(), shortHand);
         System.out.println(date);

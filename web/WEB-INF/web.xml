@@ -13,6 +13,14 @@
         <url-pattern>/search</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>archive</servlet-name>
+        <servlet-class>vocabApp.Archive</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>archive</servlet-name>
+        <url-pattern>/archive</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>listall</servlet-name>
         <servlet-class>vocabApp.ListAll</servlet-class>
     </servlet>
