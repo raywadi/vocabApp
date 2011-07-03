@@ -10,15 +10,24 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>search</servlet-name>
-        <url-pattern>/search</url-pattern>
+        <url-pattern>/jsp/search</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>currentWords</servlet-name>
+        <servlet-class>vocabApp.CurrentWords</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>currentWords</servlet-name>
+        <url-pattern>/jsp/current</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>archive</servlet-name>
         <servlet-class>vocabApp.Archive</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>archive</servlet-name>
-        <url-pattern>/archive</url-pattern>
+        <url-pattern>/jsp/archive</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>listall</servlet-name>
@@ -26,7 +35,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>listall</servlet-name>
-        <url-pattern>/listall</url-pattern>
+        <url-pattern>/jsp/listall</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>deleteall</servlet-name>
@@ -34,7 +43,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>deleteall</servlet-name>
-        <url-pattern>/deleteall</url-pattern>
+        <url-pattern>/jsp/deleteall</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>add</servlet-name>
@@ -42,7 +51,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>add</servlet-name>
-        <url-pattern>/add</url-pattern>
+        <url-pattern>/jsp/add</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>mailer</servlet-name>

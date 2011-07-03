@@ -21,7 +21,7 @@ public class Search extends HttpServlet {
         if (user != null) {
             resp.setContentType("text/plain");
             resp.getWriter().println("Hello, " + user.getNickname());
-            resp.sendRedirect("/search.jsp");
+            resp.sendRedirect("/jsp/search.jsp");
         } else {
             resp.sendRedirect(userService.createLoginURL(req.getRequestURI()));
         }

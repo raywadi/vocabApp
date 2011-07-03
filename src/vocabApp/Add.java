@@ -18,7 +18,7 @@ public class Add extends HttpServlet {
 
         if (user != null) {
             resp.setContentType("text/plain");
-            resp.sendRedirect("/add.jsp");
+            resp.sendRedirect("/jsp/add.jsp");
         } else {
             resp.sendRedirect(userService.createLoginURL(req.getRequestURI()));
         }

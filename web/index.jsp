@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head><title>VocabApp</title></head>
-<jsp:include page="template.jsp"></jsp:include>
+<jsp:include page="jsp/template.jsp"></jsp:include>
 <body>
 <div id="content" style="padding-left:15px;padding-bottom:15px">
     <h4>A simple app to help you remember new words.</h4>
@@ -13,8 +13,8 @@
     <h5>What do you have to do??</h5>
     Just sign in using your gmail account and thats all!!!
     <br><br>
-    Now you can either <a href="/search">search</a> meaning of a word and that word will automatically be added to
-    your wordlist or just add word/words to your wordlist using <a href="/add">bulk add</a>.
+    Now you can either <a href="/jsp/search">search</a> meaning of a word and that word will automatically be added to
+    your wordlist or just add word/words to your wordlist using <a href="/jsp/add">bulk add</a>.
 
 </div>
 </body>

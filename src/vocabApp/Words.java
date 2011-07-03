@@ -12,6 +12,7 @@ public class Words {
     private String word;
     private String email;
     private String shortHand;
+    private String archived;
 
     @Persistent
     private Long date;
@@ -21,6 +22,7 @@ public class Words {
         this.date = date;
         this.email = email;
         this.shortHand = shortHand;
+        archived = "false";
     }
 
 
@@ -54,5 +56,13 @@ public class Words {
 
     public void setShortHand(String shortHand) {
         this.shortHand = shortHand;
+    }
+
+    public String getArchived() {
+        return archived;
+    }
+
+    public void setArchived(String archived) {
+        this.archived = archived;
     }
 }

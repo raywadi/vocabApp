@@ -19,14 +19,14 @@ body {
 }
 
 #left {
-    width: 12%;
+    width: 11%;
     float: left;
     font-size: 20px;
 }
 
 #right {
     width: 12%;
-    height: 100%;
+    height:inherit;
     float: right;
     font-size: 20px;
 }
@@ -35,8 +35,7 @@ body {
     width: 76%;
     height: auto;
     float: right;
-    background-color: #ffffff;
-    /*border: 2px solid #1111ff;*/
+    background-color: #ffffff; /*border: 2px solid #1111ff;*/
     font-size: 16px;
     padding: 5px;
 }
@@ -94,9 +93,7 @@ body {
     height: 70%;
     float: left;
     overflow-y: scroll;
-    scrollbar-face-color: #ffffff;
-    scrollbar-shadow-color: #aaaaaa;
-    scrollbar-highlight-color: #aaaaaa;
+    padding-right:3px;
 }
 
 #meaningWithList {
@@ -110,13 +107,14 @@ body {
 .word {
     height: 40px;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 15px;
     width: 100%;
     float: left;
+    padding-right:1px
 }
 
 .wordHighlight {
-    background-color: #3333ff;
+    background-color: #aaaaaa;
     color: white;
 }
 
@@ -150,3 +148,31 @@ body {
     background-color: #1111ff;
     color: white;
 }
+
+.footer {
+    width: 76.8%;
+    background-color: #aaaaaa;
+    float: right;
+    color: white;
+}
+
+.wordText {
+    height: 40px;
+    text-align: center;
+    width: 70%;
+    float: left;
+}
+
+.image {
+    height: 40px;
+    padding-top:2px;
+    text-align: center;
+    width: 15%;
+    float:right;
+}
+
+.smallNote {
+    font-size:14px
+
+}
+

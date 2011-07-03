@@ -9,7 +9,7 @@ public class ListAll extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
                 throws IOException {
             resp.setContentType("text/plain");
-            resp.sendRedirect("/listall.jsp");
+            resp.sendRedirect("/jsp/listall.jsp");
         }
 
 }
